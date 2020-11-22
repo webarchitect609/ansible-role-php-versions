@@ -4,13 +4,13 @@ name: CI
   pull_request:
   push:
     branches:
-      - master
+      - '**'
   schedule:
     - cron: "30 6 * * 4"
 
 defaults:
   run:
-    working-directory: 'geerlingguy.php-versions'
+    working-directory: 'webarchitect609.php_versions'
 
 jobs:
 
@@ -21,7 +21,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'geerlingguy.php-versions'
+          path: 'webarchitect609.php_versions'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
@@ -70,7 +70,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'geerlingguy.php-versions'
+          path: 'webarchitect609.php_versions'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2

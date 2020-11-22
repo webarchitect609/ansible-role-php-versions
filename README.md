@@ -2,7 +2,7 @@
 
 **Attention!**
 
-This is a fork of [geerlingguy.php-versions](https://galaxy.ansible.com/geerlingguy/php-versions) role with the
+This is a fork from [geerlingguy.php-versions](https://galaxy.ansible.com/geerlingguy/php-versions) role with the
 [issue #46 "This role overrides php_packages, which is also used in geerlingguy.php"](https://github.com/geerlingguy/ansible-role-php-versions/issues/46)
 fixed using [PR #39](https://github.com/geerlingguy/ansible-role-php-versions/pull/39). Please, feel free to use this
 role if you cannot wait for corresponding PR to be merged. I will mark this role as deprecated when the original role is
@@ -44,7 +44,7 @@ The PHP version to be installed. Any [currently-supported PHP major version](htt
       roles:
         - role: geerlingguy.repo-remi
           when: ansible_os_family == 'RedHat'
-        - geerlingguy.php-versions
+        - webarchitect609.php_versions
         - geerlingguy.php
 
 ## License
