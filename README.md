@@ -4,12 +4,12 @@
 
 This is a fork of [geerlingguy.php-versions](https://galaxy.ansible.com/geerlingguy/php-versions) role with the
 [issue #46 "This role overrides php_packages, which is also used in geerlingguy.php"](https://github.com/geerlingguy/ansible-role-php-versions/issues/46)
-fixed using [PR #39](https://github.com/geerlingguy/ansible-role-php-versions/pull/39). Please, use this role for free
-if you cannot wait for corresponding PR to be merged. I will mark this role as deprecated when the original role is
+fixed using [PR #39](https://github.com/geerlingguy/ansible-role-php-versions/pull/39). Please, feel free to use this
+role if you cannot wait for corresponding PR to be merged. I will mark this role as deprecated when the original role is
 fixed, but nobody knows when it will be since [Jeff Geerling](https://www.jeffgeerling.com/) is a good but
 [really busy fellow](https://www.jeffgeerling.com/blog/2020/enabling-stale-issue-bot-on-my-github-repositories).
 
-[![Build Status](https://travis-ci.org/webarchitect609/ansible-role-php-versions.svg?branch=master)](https://travis-ci.org/webarchitect609/ansible-role-php-versions)
+[![CI](https://github.com/webarchitect609/ansible-role-php-versions/workflows/CI/badge.svg?event=push)](https://github.com/webarchitect609/ansible-role-php-versions/actions?query=workflow%3ACI)
 
 Allows different PHP versions to be installed when using the `geerlingguy.php` role (or a similar role). This role was originally built for [Drupal VM](https://www.drupalvm.com) but was released more generically so others could use an easier mechanism for switching PHP versions.
 
